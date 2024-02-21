@@ -2,22 +2,23 @@ import "../styles/App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<div class="App">
+  <div class="green"></div>
+  <div class="white"></div>
+  <div class="profile">
+    <div class="picture"></div>
+  </div>
+  <div class="title"></div>
+  <div class="links"></div>
+  <div class="text">
+    <div class="text-box1">
+      <div class="buttons"></div>
+      <div class="title-text"></div>
+      <div class="main-text"></div>
     </div>
+  </div>
+  <div class="navbar"></div>
+</div>
   );
 }
 

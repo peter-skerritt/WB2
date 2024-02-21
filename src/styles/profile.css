@@ -1,0 +1,19 @@
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .left-div,
+  .right-div {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .me {
+    width: 100px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  

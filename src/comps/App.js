@@ -1,5 +1,5 @@
 import "../styles/App.css";
-import me from "../media/me.jpeg";
+import Profile from "./Profile";
 
 function App() {
   return (
@@ -7,9 +7,7 @@ function App() {
   <div class="green"></div>
   <div class="white"></div>
   <div class="profile">
-    <div class="picture">
-    <img src= {me} alt="A"></img>
-    </div>
+    <Profile/>
   </div>
   <div class="title">
     <h1>Peter Skerritt</h1>
@@ -26,8 +24,8 @@ function App() {
         <button>No</button>
       </div>
       <div class="title-text">
-        <h2>Peter Skerritt</h2>
-        <h3>Software Developer</h3>
+        <h3>Peter Skerritt</h3>
+        <h2>Software Developer</h2>
       </div>
       <div class="main-text">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

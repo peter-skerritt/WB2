@@ -1,16 +1,11 @@
 import React from 'react';
-import './Profile.css'; 
+import me from "../media/me.jpeg";
+import "../styles/profile.css";
 
 const Profile = () => {
   return (
-    <div className="parent-container">
-      <div className="left-div">
-        {/* Content of the left div */}
-      </div>
-      <img src="/path/to/your/image.jpg" alt="Bridge Image" className="bridge-image" alt="A"/>
-      <div className="right-div">
-        {/* Content of the right div */}
-      </div>
+    <div className="picture">
+      <img className="profile-img" src={me} alt="A" />
     </div>
   );
 };

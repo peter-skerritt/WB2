@@ -1,6 +1,7 @@
 import "../styles/App.css";
 import Profile from "./Profile";
 import Buttons from "./Buttons";
+import Title from "./Title";
 
 function App() {
   return (
@@ -10,9 +11,7 @@ function App() {
   <div class="profile">
     <Profile/>
   </div>
-  <div class="title">
-    <h1>Peter Skerritt</h1>
-  </div>
+ <Title/>
   <div class="links">
     <p>Github</p>
     <p>LinkedIn</p>

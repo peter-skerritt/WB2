@@ -2,6 +2,7 @@ import "../styles/App.css";
 import Profile from "./Profile";
 import Buttons from "./Buttons";
 import Title from "./Title";
+import Navbar from "./Navbar";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
   <div class="profile">
     <Profile/>
   </div>
- <Title/>
+  <Title/>
   <div class="links">
     <p>Github</p>
     <p>LinkedIn</p>
@@ -32,9 +33,7 @@ function App() {
           </div>
         </div>
   </div>
-  <div class="navbar">
-    <p>Navbar</p>
-  </div>
+   <Navbar/>
 </div>
   );
 }

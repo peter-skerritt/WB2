@@ -24,6 +24,21 @@
     justify-content: center;
     align-items: center;
 }
+@media (max-width: 3000px) {
+  .profile-img {
+    height: 90% !important;
+    width: 90% !important;
+  }
+}
+
+
+@media (max-width: 2700px) {
+  .profile-img {
+    height: 90% !important;
+    width: 90% !important;
+  }
+}
+
 
 @media (max-width: 2200px) {
   .profile-img {

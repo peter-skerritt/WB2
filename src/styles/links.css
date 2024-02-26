@@ -1,0 +1,18 @@
+/* styles/links.css */
+.links {
+    display: flex;
+    justify-content: center; /* Center the child elements horizontally */
+    align-items: center; /* Center the child elements vertically */
+  }
+  
+  .git,
+  .linkedin {
+   margin-right: 50%;
+  }
+  
+  .devicon-twitter-original,
+  .devicon-github-original,
+  .devicon-linkedin-plain {
+    font-size: 300%;
+    color: white;
+  }

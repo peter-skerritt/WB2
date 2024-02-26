@@ -1,4 +1,6 @@
-.App {  display: grid;
+/* Common styles for all screen sizes */
+.App {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 10vh 80vh 10vh;
   grid-auto-columns: 1fr;
@@ -6,67 +8,93 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   height: 100vh;
-
 }
 
-
-
-.green { 
+.green {
   grid-area: 1 / 1 / 4 / 3;
   background-color: rgb(91, 117, 91);
 }
 
-.white { grid-area: 1 / 3 / 4 / 8; }
-
-.profile {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.7fr 1.6fr 0.7fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". . ."
-    "picture picture picture"
-    ". . .";
-  grid-area: 2 / 2 / 3 / 4;
-  
+.white {
+  grid-area: 1 / 3 / 4 / 8;
 }
 
-.picture { grid-area: picture; }
-
-.title { grid-area: 1 / 1 / 2 / 2; }
-
-.links { grid-area: 3 / 1 / 4 / 2; }
-
-.text {  display: grid;
+.profile {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.7fr 1.6fr 0.7fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas:
-    ". . ."
-    "text-box1 text-box1 text-box1"
-    ". . .";
+  grid-template-areas: ". . ." "picture picture picture" ". . .";
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.picture {
+  grid-area: picture;
+}
+
+.title {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.links {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.text {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.7fr 1.6fr 0.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . ." "text-box1 text-box1 text-box1" ". . .";
   grid-area: 2 / 4 / 3 / 8;
 }
 
-.text-box1 {  display: grid;
+.text-box1 {
+  display: grid;
   grid-template-columns: 0.4fr 1.9fr 0.7fr;
   grid-template-rows: 0.7fr 1.5fr 0.8fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas:
-    ". title-text ."
-    ". main-text ."
-    ". buttons .";
+  grid-template-areas: ". title-text ." ". main-text ." ". buttons .";
   grid-area: text-box1;
 }
 
-.buttons { grid-area: buttons; }
+.buttons {
+  grid-area: buttons;
+}
 
-.title-text { grid-area: title-text; }
+.title-text {
+  grid-area: title-text;
+}
 
-.main-text { grid-area: main-text; }
+.main-text {
+  grid-area: main-text;
+}
 
-.navbar { grid-area: 1 / 7 / 2 / 8; }
+.navbar {
+  grid-area: 1 / 7 / 2 / 8;
+}
 
+/* Media query for smaller desktop sizes and tablets */
+@media (max-width: 1024px) {
+  .App {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 
+  .green {
+    grid-area: 1 / 1 / 4 / 4;
+  }
+
+  .white {
+    grid-area: 1 / 4 / 4 / 7;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 739px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
+}

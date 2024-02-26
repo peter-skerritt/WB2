@@ -20,4 +20,35 @@
 
   .profile-img {
     border-radius: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 2200px) {
+  .profile-img {
+    height: 90% !important;
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 2000px) {
+  .profile-img {
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1600px) {
+  .profile-img {
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .profile-img {
+    height: 120% !important;
+    width: 120% !important;
+  }
 }

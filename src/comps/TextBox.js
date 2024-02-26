@@ -1,26 +1,14 @@
-import "../styles/App.css";
-import Profile from "./Profile";
-import Buttons from "./Buttons";
+import React from "react";
+import "../styles/textBox.css";
 
-function App() {
-  return (
-<div class="App">
-  <div class="green"></div>
-  <div class="white"></div>
-  <div class="profile">
-    <Profile/>
-  </div>
-  <div class="title">
-    <h1>Peter Skerritt</h1>
-  </div>
-  <div class="links">
-    <p>Github</p>
-    <p>LinkedIn</p>
-    <p>Twitter</p>
-  </div>
-  <div class="text">
-  <div class="text-box1">
-        <Buttons/>
+const textBox = () => {
+    return (
+        
+        <div class="text-box1">
+          <div class="buttons">
+            <button>Yes</button>
+            <button>No</button>
+          </div>
           <div class="title-text">
             <h3>Peter Skerritt</h3>
             <h2>Software Developer</h2>
@@ -32,12 +20,8 @@ function App() {
             </p>
           </div>
         </div>
-  </div>
-  <div class="navbar">
-    <p>Navbar</p>
-  </div>
-</div>
-  );
-}
-
-export default App;
+        
+    );
+  };
+  
+  export default textBox;

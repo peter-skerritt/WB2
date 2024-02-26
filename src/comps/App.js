@@ -3,6 +3,7 @@ import Profile from "./Profile";
 import Buttons from "./Buttons";
 import Title from "./Title";
 import Navbar from "./Navbar";
+import Links from "./Links";
 
 function App() {
   return (
@@ -12,12 +13,15 @@ function App() {
   <div class="profile">
     <Profile/>
   </div>
+
+  <div class="title">
   <Title/>
-  <div class="links">
-    <p>Github</p>
-    <p>LinkedIn</p>
-    <p>Twitter</p>
   </div>
+
+  <div class="links">
+  <Links/>
+  </div>
+  
   <div class="text">
   <div class="text-box1">
         <Buttons/>

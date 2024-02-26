@@ -1,20 +1,24 @@
-
 /* styles/navbar.css */
 .navelement {
     position: relative;
-    display: flex;
-    justify-content: right;
+    display: inline-block;
     margin: 10%;
- }
+  }
   
+  .material-symbols-outlined {
+    font-family: 'Material Icons';
+    cursor: pointer;
+  }
   
   .dropdown-menu {
-    top: 100%;
+    position: absolute;
+    top: 100%; /* Adjust to 100% to make the dropdown appear below the icon */
     left: 0;
     display: none;
   }
   
   .navelement:hover .dropdown-menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   
